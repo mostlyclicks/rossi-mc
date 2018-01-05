@@ -34,7 +34,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 
 gem 'therubyracer'
-gem 'rails_12factor'
+# gem 'rails_12factor' not needed in rails 5
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
