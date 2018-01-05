@@ -68,3 +68,5 @@ gem 'refinerycms-acts-as-indexed', ['~> 3.0', '>= 3.0.0']
 
 # Add the default visual editor, for now.
 gem 'refinerycms-wymeditor', ['~> 2.0', '>= 2.0.0']
+
+gem 'refinerycms-authentication-devise', '~> 2.0.0'
