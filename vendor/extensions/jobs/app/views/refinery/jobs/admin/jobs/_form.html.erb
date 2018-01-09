@@ -15,18 +15,36 @@
 
   <div class='field'>
     <%= f.label :full_part_time -%>
-    <%= f.select :full_part_time, options_for_select([["full-time", "full-time"], ["part-time", "part-time"]], :selected => @job.full_part_time) -%>
+    <%= f.select :full_part_time, options_for_select([
+        ["full-time", "full-time"],
+        ["part-time", "part-time"]
+      ], :selected => @job.full_part_time) -%>
   </div>
 
   <div class='field'>
     <%= f.label :location -%>
-    <%#= f.text_field :location -%>
-    <%= f.select :location, options_for_select([["Ogden, UT", "Ogden, UT"],["Park City, UT", "Park City, UT"],["Rancho Santa Margarita, CA", "Rancho Santa Margarita, CA"],["Quebec, CAN", "Quebec, CAN"]], :selected => @job.location) -%>
+    <%= f.select :location, options_for_select([
+        ["Ogden, UT", "Ogden, UT"],
+        ["Park City, UT", "Park City, UT"],
+        ["Rancho Santa Margarita, CA", "Rancho Santa Margarita, CA"],
+        ["Quebec, CAN", "Quebec, CAN"]
+      ], :selected => @job.location) -%>
   </div>
 
   <div class='field'>
     <%= f.label :brands -%>
-    <%= f.text_field :brands -%>
+    <%#= f.text_field :brands -%>
+    <%= f.select :brands, options_for_select([
+        ["Groupe Rossignol", "Groupe Rossignol"],
+        ["Rossignol", "Rossignol"],
+        ["Dynastar", "Dynastar"],
+        ["LOOK", "LOOK"],
+        ["Lange", "Lange"],
+        ["Felt", "Felt"],
+        ["TIME", "TIME"],
+        ["Raidlight", "Raidlight"],
+        ["Dale of Norway", "Dale of Norway"]
+      ], :selected => @job.brands) -%>
   </div>
 
   <div class='field'>
