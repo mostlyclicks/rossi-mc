@@ -15,13 +15,18 @@
 
   <div class='field'>
     <%= f.label :full_part_time -%>
-    <%#= f.text_field :full_part_time -%>
     <%= f.select :full_part_time, options_for_select([["full-time", "full-time"], ["part-time", "part-time"]], :selected => @job.full_part_time) -%>
   </div>
 
   <div class='field'>
     <%= f.label :location -%>
-    <%= f.text_field :location -%>
+    <%#= f.text_field :location -%>
+    <%= f.select :location, options_for_select([["Ogden, UT", "Ogden, UT"],["Park City, UT", "Park City, UT"],["Rancho Santa Margarita, CA", "Rancho Santa Margarita, CA"],["Quebec, CAN", "Quebec, CAN"]], :selected => @job.location) -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :brands -%>
+    <%= f.text_field :brands -%>
   </div>
 
   <div class='field'>
@@ -31,10 +36,7 @@
                 :object => "jobs/job" -%>
   </div>
 
-  <div class='field'>
-    <%= f.label :brands -%>
-    <%= f.text_field :brands -%>
-  </div>
+  
 
   <%= render '/refinery/admin/form_actions', :f => f,
              :continue_editing => false,
