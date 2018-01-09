@@ -1,0 +1,34 @@
+ru:
+  refinery:
+    plugins:
+      jobs:
+        title: Jobs
+    jobs:
+      admin:
+        jobs:
+          actions:
+            create_new: Добавить Job
+            reorder: Изменить порядок Jobs
+            reorder_done: Закончить изменять порядок Jobs
+          records:
+            title: Jobs
+            sorry_no_results: "Извините, поиск не дал результатов."
+            no_items_yet: Записей "Jobs" не найдено. Нажмите "Добавить Job" чтобы создать job.
+          job:
+            view_live_html: Просмотреть job вживую <br/><em>(в новом окне)</em>
+            edit: Редактировать job
+            delete: Удалить job навсегда
+      jobs:
+        show:
+          other: Другие Jobs
+  activerecord:
+    attributes:
+      'refinery/jobs/job':
+        title: Title
+        active: Active
+        full_part_time: Full Part Time
+        location: Location
+        description_long: Description Long
+        description_short: Description Short
+        skills_requirements: Skills Requirements
+        brands: Brands

@@ -8,3 +8,6 @@
 
 # Added by Refinery CMS Pages extension
 Refinery::Pages::Engine.load_seed
+
+# Added by Refinery CMS Jobs extension
+Refinery::Jobs::Engine.load_seed

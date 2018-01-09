@@ -1,0 +1,34 @@
+nl:
+  refinery:
+    plugins:
+      jobs:
+        title: Jobs
+    jobs:
+      admin:
+        jobs:
+          actions:
+            create_new: Nieuwe Job toevoegen
+            reorder: De volgorde van de Jobs wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Job-volgorde
+          records:
+            title: Jobs
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Jobs. Druk op 'Nieuwe Job toevoegen' om de eerste toe te voegen.
+          job:
+            view_live_html: Deze job op de website bekijken <br/><em>(opent in een nieuw venster)</em>
+            edit: Bewerk deze job
+            delete: Deze job definitief verwijderen
+      jobs:
+        show:
+          other: Andere Jobs
+  activerecord:
+    attributes:
+      'refinery/jobs/job':
+        title: Title
+        active: Active
+        full_part_time: Full Part Time
+        location: Location
+        description_long: Description Long
+        description_short: Description Short
+        skills_requirements: Skills Requirements
+        brands: Brands
