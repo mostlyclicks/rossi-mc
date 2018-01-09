@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180109161003) do
+ActiveRecord::Schema.define(version: 20180109163709) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -78,7 +78,6 @@ ActiveRecord::Schema.define(version: 20180109161003) do
 
   create_table "refinery_jobs", force: :cascade do |t|
     t.string "title"
-    t.string "active"
     t.string "full_part_time"
     t.string "location"
     t.text "description_long"
@@ -88,6 +87,7 @@ ActiveRecord::Schema.define(version: 20180109161003) do
     t.integer "position"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.boolean "active"
   end
 
   create_table "refinery_page_part_translations", force: :cascade do |t|
